@@ -1,0 +1,100 @@
+
+  body {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    line-height: 1.8em;
+    letter-spacing: -.014em;
+    color: #292e31;
+  }
+  .header {
+    margin: 30vh 13em;
+  }
+  .header-name {
+    font-size: 6vw;
+    line-height: .9em;
+    font-weight: 900;
+    margin: .2em 0 .6em;
+    max-width: 800px;
+  }
+  .projects, .work {
+        padding: 2em 13em;
+  }
+  h2.category-label {
+    font-size: 1.2em;
+    line-height: 1.1em;
+    margin: .5em 0 .6em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: 400;
+    color: #bdbdcf;
+    position: relative;
+  }
+  h2.category-label:before {
+      content: "";
+      position: absolute;
+      top: .5em;
+      right: auto;
+      bottom: auto;
+      left: -1.6em;
+      width: 13em;
+      border-bottom: 1px solid;
+      transform: translate3d(-100%,0,0);
+  }
+  h3.project-name {
+    font-size: 3em;
+    line-height: 1.1em;
+    margin: 1em 0 0;
+    letter-spacing: -.022em;
+    font-weight: 900;
+  }
+  h3.work-name {
+    font-size: 3em;
+    line-height: 1.1em;
+    margin: 1em 0 0;
+    letter-spacing: -.022em;
+    font-weight: 900;
+  }
+  div.project-description, div.work-description {
+    position: relative;
+    margin-bottom: 1.6em;
+    max-width: 50em;
+  }
+  div.project-details p, div.work-details p {
+    margin: 1.2em 0;
+    padding-bottom: 1em;
+  }
+  div.tools {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: auto;
+    bottom: auto;
+    left: -1.6em;
+    width: 210px;
+    height: 200px;
+    text-align: right;
+    transform: translate3d(-100%,0,0);
+  }
+  h4.tools-label {
+    font-size: .9em;
+    line-height: 1.1em;
+    margin: .5em 0 .6em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: 400;
+    color: #bdbdcf;
+  }
+  div.tools-item-pill {
+    background: #114d4d;
+    color: #fff;
+    margin-bottom: .6em;
+    padding: .6em .9em;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1em;
+    border-radius: 2px;
+    margin: .5em 0 .6em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: 400;
+  }

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Brian Ouellette</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <!-- Include: https://github.com/btouellette -->
+  <body>
+    <div id="root">
+      <div class="header">
+        <div class="header-top-text">Hi I'm</div>
+        <h1 class="header-name">Brian Ouellette</h1>
+        <div class="header-bottom-text">
+          <div>I'm a Portland, Oregon area full stack developer interested in technology, cosmology, fiction, and game design.</div>
+          <div>Currently working at Intel on data warehousing/analytics/visualization and building web apps for use across their global factory network.</div>
+        </div>
+      </div>
+      <div class="projects">
+        <h2 class="category-label">Projects</h2>
+        <div id="project-unity" class="project">
+          <h3 class="project-name">Game Prototypes</h3>
+          <div class="project-description">
+            <div class="tools">
+              <h4 class="tools-label">Tools Used</h4>
+              <div class="tools-item">
+                <div class="tools-item-pill">Unity</div>
+              </div>
+              <div class="tools-item">
+                <div class="tools-item-pill">.NET</div>
+              </div>
+            </div>
+            <div class="project-details">
+              <p>I'm learning Unity fundamentals and touching on related skills such as 3d modeling and animation by working on prototypes for a few different game ideas. Current prototypes are focused on procedurally generated terrain (using both procedural meshes and various forms of mesh tilesets) and 3D character and camera controllers.</p>
+              <p>Everything is still very much in flux and not polished enough to publish but throwing things together has been a blast so far and has certainly been sharpening my spatial skills.</p>
+            </div>
+          </div>
+        </div>
+        <div id="project-concarneau" class="project">
+          <h3 class="project-name">Concarneau</h3>
+          <div class="project-description">
+            <div class="tools">
+              <h4 class="tools-label">Tools Used</h4>
+              <div class="tools-item">
+                <div class="tools-item-pill">Node.js</div>
+              </div>
+              <div class="tools-item">
+                <div class="tools-item-pill">Express</div>
+              </div>
+              <div class="tools-item">
+                <div class="tools-item-pill">MongoDB</div>
+              </div>
+              <div class="tools-item">
+                <div class="tools-item-pill">D3</div>
+              </div>
+              <div class="tools-item">
+                <div class="tools-item-pill">jQuery</div>
+              </div>
+              <div class="tools-item">
+                <div class="tools-item-pill">socket.io</div>
+              </div>
+            </div>
+            <div class="project-details">
+              <p>I created an open-source online implementation of one of my favorite board games, Carcassone. It is feature complete and includes support for a few expansions beyond the base game. I'm quite happy with how everything turned out. The site has been running stably with >100 users for years now.</p>
+              <p>As my first project built with Node and Mongo I learned a lot and really appreciate the Node ecosystem for small single-developer projects like this one. It also reinforced my growing love of D3.js. After you really grok the mental model required to use it properly for dynamic updates it makes real-time gamestate updates and animations quite simple and with an expressive code structure.</p>
+            </div>
+          </div>
+        </div>
+        <div id="project-hhhfreshbotredux" class="project">
+          <h3 class="project-name">HHHFreshBotRedux</h3>
+          <div class="project-description">
+            <div class="tools">
+              <h4 class="tools-label">Tools Used</h4>
+              <div class="tools-item">
+                <div class="tools-item-pill">Node.js</div>
+              </div>
+              <div class="tools-item">
+                <div class="tools-item-pill">PostgreSQL</div>
+              </div>
+              <div class="tools-item">
+                <div class="tools-item-pill">Snoowrap</div>
+              </div>
+              <div class="tools-item">
+                <div class="tools-item-pill">octokit</div>
+              </div>
+            </div>
+            <div class="project-details">
+              <p>I used to find a lot of new hip-hop music through a Reddit bot that would trawl the hip-hop subreddit (r/HipHopHeads) for new music posted there and generate daily and weekly newsletters with everything new being posted. When it stopped working one day I had to start looking through new posts manually for a while but was missing a lot when not checking regularly as Reddit limits fetching recent posts to the past ~3 days. I found a repo with some early source code of the original Python-based bot and after some work trying to get it up and running again decided to reimplement the bot from the ground up.</p>
+              <p>I didn't end up using any of the original source but replicated the original features of the bot (archiving new posts to a database, daily and weekly newsletters via PM subscription, and posting weekly updates to the subreddit) with Node running out of a Heroku instance. After matching the previous behavior I enhanced it to archive all posts to a GitHub repo and built a GitHub Pages site to allow new music to be easily traversed with media embedding, post filtering, infinite scroll, and the ability to hide seen posts.</p>
+            </div>
+          </div>
+        </div>
+        <div id="project-cosmological-pursuits" class="project">
+          <h3 class="project-name">Cosmological Pursuits</h3>
+          <!--http://cosmologicalpursuits.blogspot.com/-->
+          <div class="project-description">
+            <div class="tools">
+              <h4 class="tools-label">Tools Used</h4>
+              <div class="tools-item">
+                <div class="tools-item-pill">.NET</div>
+              </div>
+              <div class="tools-item">
+                <div class="tools-item-pill">Octave</div>
+              </div>
+              <div class="tools-item">
+                <div class="tools-item-pill">MathJax</div>
+              </div>
+            </div>
+            <div class="project-details">
+              <p>This is a small blog created while self-studying cosmology to provide a place to structure and organize my thoughts whenever I reached a topic complex enough to require it. As part of this I created a software package in .NET to generate color mapped images to visualize spherical harmonics across a range of degrees and orders.</p>
+            </div>
+          </div>
+        </div>
+        <div id="project-dojo" class="project">
+          <h3 class="project-name">Dojo</h3>
+          <div class="project-description">
+            <div class="tools">
+              <h4 class="tools-label">Tools Used</h4>
+              <div class="tools-item">
+                <div class="tools-item-pill">Java</div>
+              </div>
+              <div class="tools-item">
+                <div class="tools-item-pill">Swing</div>
+              </div>
+            </div>
+            <div class="project-details">
+              <p>Dojo is an online game client for my favorite (sadly now defunct and sold to new owners) trading card game, Legend of the Five Rings. At the time there were a few Magic specific clients and some generic clients built to use for any type of card game but Legend of the Five Rings includes a lot more rules than most card games with two separate decks and three game areas plus a hand for each player. Dojo implemented all the non-card specific rules specific to Legend of the Five Rings to drastically reduce the amount of user input needed to play a game and supported all the functionality needed to play complete games. It was built out on Java specifically to be cross-platform.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work">
+        <h2 class="category-label">Work</h2>
+        <div class="work-item">
+          <h3 class="work-name">Intel</h3>
+          <div class="work-description">
+            <div class="tools">
+              <h4 class="tools-label">Tools Used</h4>
+              <div class="tools-item">
+                <div class="tools-item-pill">C# & .NET</div>
+              </div>
+              <div class="tools-item">
+                <div class="tools-item-pill">Microsoft MVC</div>
+              </div>
+              <div class="tools-item">
+                <div class="tools-item-pill">D3</div>
+              </div>
+              <div class="tools-item">
+                <div class="tools-item-pill">Oracle SQL & PLSQL</div>
+              </div>
+            </div>
+            <div class="work-details">
+              <p>I'm currently working out of Intel's research fab in Hillsboro, Oregon. More specifically in the Decision Support Systems group in Logic Technology Development Automation. We're the group responsible for warehousing and analytics on the operational data coming out of the fab.</p>
+              <p>My work involves understanding the variety of data domains across the factory and designing loaders and schemas to capture and store the data for analysis then building and supporting custom reporting and analysis systems, typically delivered to the factory as internal web apps or exposed for direct use in the one of our warehouses. Custom data visualization plays a big part of effectively communicating actionable results from the flood of data coming out of the factory. The volume and complexity of the data involved keeps this quite interesting with new requirements coming out of the factory constantly. The software we develop and deploy here in the research fab we also deploy and support across Intel's "virtual factory" network of fabs worldwide.</p>
+            </div>
+          </div>
+        </div>
+        <div class="work-item">
+          <h3 class="work-name">ArrayFire</h3>
+          <!-- https://arrayfire.com/ -->
+          <div class="work-description">
+            <div class="tools">
+              <h4 class="tools-label">Tools Used</h4>
+              <div class="tools-item">
+                <div class="tools-item-pill">C</div>
+              </div>
+              <div class="tools-item">
+                <div class="tools-item-pill">CUDA</div>
+              </div>
+              <div class="tools-item">
+                <div class="tools-item-pill">MATLAB</div>
+              </div>
+            </div>
+            <div class="work-details">
+              <p>ArrayFire is a startup providing HPC solutions focused on GPU acceleration and distributed computing. I worked in their Core Systems Group primarily developing custom CUDA kernels to GPU accelerate image processing routines. Their primary product at the time was a drop in GPU acceleration library for MATLAB that would provide behind the scenes acceleration of MATLAB code, now released as a general purpose library independent of MATLAB.</p>
+              <p>They are a high-caliber team and were great to work with. The work itself was certainly satisfying as well. Nothing beats working the feeling of working on something technically complex and seeing it work perfectly with speedups of >1000x at the end of the day!</p>
+            </div>
+          </div>
+        </div>
+        <div class="work-item">
+          <h3 class="work-name">Georgia Tech Research Institute</h3>
+          <!-- https://www.gtri.gatech.edu/laboratories/electro-optical-systems-laboratory -->
+          <div class="work-description">
+            <div class="tools">
+              <h4 class="tools-label">Tools Used</h4>
+              <div class="tools-item">
+                <div class="tools-item-pill">C</div>
+              </div>
+              <div class="tools-item">
+                <div class="tools-item-pill">MATLAB</div>
+              </div>
+            </div>
+            <div class="work-details">
+              <p>I worked in the Remote Sensing Group, part of their Electro-Optical Systems Laboratory, doing contracting work primarily for the Department of Defense. Most of the projects I was involved with are classified so I can't discuss individual projects but I worked on designing and building optical systems along with their associated signal processing and simulating and analyzing deployment of infrared countermeasures. I was also involved in data collection and analysis for a variety of projects as well.</p>
+            </div>
+          </div>
+        </div>
+        <div class="work-item">
+          <h3 class="work-name">Georgia Tech Computer Aided Design Laboratory</h3>
+          <!-- http://www.gtcad.gatech.edu/ -->
+          <!-- http://www.gtcad.gatech.edu/3d-maps/ -->
+          <div class="work-description">
+            <div class="tools">
+              <h4 class="tools-label">Tools Used</h4>
+              <div class="tools-item">
+                <div class="tools-item-pill">C</div>
+              </div>
+              <div class="tools-item">
+                <div class="tools-item-pill">GAMBIT</div>
+              </div>
+              <div class="tools-item">
+                <div class="tools-item-pill">FLUENT</div>
+              </div>
+            </div>
+            <div class="work-details">
+              <p>During my undergraduate work I was lucky enough to be able to work with GTCAD and Sung Kyu Lim on the 3D-MAPS project, the first taped out 3D many-core processor from an academic institution. I worked with one other undergraduate to set up a custom thermal modeling pipeline using ANSYS GABMIT and FLUENT to evaluate the thermal properties of the unrealized design.</p>
+              <p>As major CAD tools at the time could not handle TSVs or the concept 3D stacking the lab had a custom tool chain to handle the design. We developed scripts to translate and combine the labs custom layout files into a format usable with solid & thermal modeling tools and to set up and run the simulations to get thermal characterstics from the designs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
