@@ -5,7 +5,12 @@
     <title>Brian Ouellette</title>
     <link rel="stylesheet" type="text/css" href="index.css">
   </head>
-  <!-- Include: https://github.com/btouellette -->
+  <!-- Include: https://github.com/btouellette
+                favicon
+       Colors: https://www.vectorstock.com/royalty-free-vector/color-space-landscape-background-with-view-uranus-vector-16927755
+               https://www.vecteezy.com/free-vector/saturn
+               https://coolors.co/c2ceda-efefef-171c2f-343947-f7f9f9
+  -->
   <body>
     <div id="root">
       <div class="header">
@@ -17,21 +22,24 @@
         </div>
       </div>
       <div class="projects">
-        <h2 class="category-label">Projects</h2>
+        <h2 class="category-label label">Projects</h2>
         <div id="project-unity" class="project">
           <h3 class="project-name">Game Prototypes</h3>
           <div class="project-description">
             <div class="tools">
-              <h4 class="tools-label">Tools Used</h4>
+              <h4 class="tools-label label">Tools Used</h4>
               <div class="tools-item">
                 <div class="tools-item-pill">Unity</div>
               </div>
               <div class="tools-item">
-                <div class="tools-item-pill">C# & .NET</div>
+                <div class="tools-item-pill">C#</div>
+              </div>
+              <div class="tools-item">
+                <div class="tools-item-pill">Cg/HLSL</div>
               </div>
             </div>
             <div class="project-details">
-              <p>I'm learning Unity fundamentals and touching on related skills such as 3d modeling and animation by working on prototypes for a few different game ideas. Current prototypes are focused on procedurally generated terrain (using both procedural meshes and various forms of mesh tilesets) and 3D character and camera controllers.</p>
+              <p>I'm learning Unity fundamentals and touching on related skills such as 3D modeling and animation by working on prototypes for a few different game ideas. Current prototypes are focused on procedurally generated terrain (using both procedural meshes and various forms of mesh tilesets) and 3D character and camera controllers.</p>
               <p>Everything is still very much in flux and not polished enough to publish but throwing things together has been a blast so far and has certainly been sharpening my spatial skills.</p>
             </div>
           </div>
@@ -40,15 +48,15 @@
           <h3 class="project-name">Concarneau</h3>
           <div class="project-description">
             <div class="tools">
-              <h4 class="tools-label">Tools Used</h4>
+              <h4 class="tools-label label">Tools Used</h4>
               <div class="tools-item">
-                <div class="tools-item-pill">Node.js</div>
+                <div class="tools-item-pill">Node</div>
               </div>
               <div class="tools-item">
                 <div class="tools-item-pill">Express</div>
               </div>
               <div class="tools-item">
-                <div class="tools-item-pill">MongoDB</div>
+                <div class="tools-item-pill">Mongo</div>
               </div>
               <div class="tools-item">
                 <div class="tools-item-pill">D3</div>
@@ -65,14 +73,18 @@
               <p>As my first project built with Node and Mongo I learned a lot and really appreciate the Node ecosystem for small single-developer projects like this one. It also reinforced my growing love of D3.js. After you really grok the mental model required to use it properly for dynamic updates it makes real-time gamestate updates and animations quite simple and with an expressive code structure.</p>
             </div>
           </div>
+          <div class="button-links">
+            <a href="https://concarneau.herokuapp.com" class="button-link" target="_blank" rel="noopener">Try it out</a>
+            <a href="https://github.com/btouellette/concarneau" class="button-link" target="_blank" rel="noopener">See the source</a>
+          </div>
         </div>
         <div id="project-hhhfreshbotredux" class="project">
           <h3 class="project-name">HHHFreshBotRedux</h3>
           <div class="project-description">
             <div class="tools">
-              <h4 class="tools-label">Tools Used</h4>
+              <h4 class="tools-label label">Tools Used</h4>
               <div class="tools-item">
-                <div class="tools-item-pill">Node.js</div>
+                <div class="tools-item-pill">Node</div>
               </div>
               <div class="tools-item">
                 <div class="tools-item-pill">PostgreSQL</div>
@@ -85,19 +97,22 @@
               </div>
             </div>
             <div class="project-details">
-              <p>I used to find a lot of new hip-hop music through a Reddit bot that would trawl the hip-hop subreddit (r/HipHopHeads) for new music posted there and generate daily and weekly newsletters with everything new being posted. When it stopped working one day I had to start looking through new posts manually for a while but was missing a lot when not checking regularly as Reddit limits fetching recent posts to the past ~3 days. I found a repo with some early source code of the original Python-based bot and after some work trying to get it up and running again decided to reimplement the bot from the ground up.</p>
-              <p>I didn't end up using any of the original source but replicated the original features of the bot (archiving new posts to a database, daily and weekly newsletters via PM subscription, and posting weekly updates to the subreddit) with Node running out of a Heroku instance. After matching the previous behavior I enhanced it to archive all posts to a GitHub repo and built a GitHub Pages site to allow new music to be easily traversed with media embedding, post filtering, infinite scroll, and the ability to hide seen posts.</p>
+              <p>I used to find a lot of new hip-hop music through a Reddit bot that would trawl the hip-hop subreddit (r/HipHopHeads) for new music posted there and generate daily and weekly newsletters with everything new. When it stopped working one day I had to start looking through new posts manually for a while but was missing a lot when not checking regularly as Reddit limits fetching recent posts to the past ~3 days. I found a repo with some early source code of the original Python-based bot and after some work trying to get it up and running again decided to reimplement the bot from the ground up.</p>
+              <p>I didn't end up using any of the original source but replicated the original features of the bot (archiving new posts to a database, daily and weekly newsletters via PM subscription, and posting weekly updates to the subreddit) in a Node project running out of a Heroku instance. After matching the previous behavior I enhanced it to archive all posts to a GitHub repo and built a GitHub Pages site to allow new music to be easily traversed with media embedding, post filtering, infinite scroll, and the ability to hide seen posts.</p>
             </div>
+          </div>
+          <div class="button-links">
+            <a href="https://reddit.com/u/HHHFreshBotRedux" class="button-link" target="_blank" rel="noopener">Check it out</a>
+            <a href="https://github.com/btouellette/HHHFreshBotRedux" class="button-link" target="_blank" rel="noopener">See the source</a>
           </div>
         </div>
         <div id="project-cosmological-pursuits" class="project">
           <h3 class="project-name">Cosmological Pursuits</h3>
-          <!--http://cosmologicalpursuits.blogspot.com/-->
           <div class="project-description">
             <div class="tools">
-              <h4 class="tools-label">Tools Used</h4>
+              <h4 class="tools-label label">Tools Used</h4>
               <div class="tools-item">
-                <div class="tools-item-pill">C# & .NET</div>
+                <div class="tools-item-pill">C#</div>
               </div>
               <div class="tools-item">
                 <div class="tools-item-pill">Octave</div>
@@ -110,12 +125,16 @@
               <p>This is a small blog created while self-studying cosmology to provide a place to structure and organize my thoughts whenever I reached a topic complex enough to require it. As part of this I created a software package in .NET to generate color mapped images to visualize spherical harmonics across a range of degrees and orders.</p>
             </div>
           </div>
+          <div class="button-links">
+            <a href="https://cosmologicalpursuits.blogspot.com" class="button-link" target="_blank" rel="noopener">Check it out</a>
+            <a href="https://github.com/btouellette/SphericalHarmonics" class="button-link" target="_blank" rel="noopener">See the source</a>
+          </div>
         </div>
         <div id="project-dojo" class="project">
           <h3 class="project-name">Dojo</h3>
           <div class="project-description">
             <div class="tools">
-              <h4 class="tools-label">Tools Used</h4>
+              <h4 class="tools-label label">Tools Used</h4>
               <div class="tools-item">
                 <div class="tools-item-pill">Java</div>
               </div>
@@ -128,19 +147,22 @@
             </div>
           </div>
         </div>
+        <div class="button-links">
+          <a href="https://github.com/btouellette/dojo" class="button-link" target="_blank" rel="noopener">See the source</a>
+        </div>
       </div>
       <div class="work">
-        <h2 class="category-label">Work</h2>
+        <h2 class="category-label label">Work</h2>
         <div class="work-item">
           <h3 class="work-name">Intel</h3>
           <div class="work-description">
             <div class="tools">
-              <h4 class="tools-label">Tools Used</h4>
+              <h4 class="tools-label label">Tools Used</h4>
               <div class="tools-item">
-                <div class="tools-item-pill">C# & .NET</div>
+                <div class="tools-item-pill">C#</div>
               </div>
               <div class="tools-item">
-                <div class="tools-item-pill">Microsoft MVC</div>
+                <div class="tools-item-pill">MS MVC</div>
               </div>
               <div class="tools-item">
                 <div class="tools-item-pill">IIS</div>
@@ -149,7 +171,7 @@
                 <div class="tools-item-pill">D3</div>
               </div>
               <div class="tools-item">
-                <div class="tools-item-pill">Oracle SQL & PLSQL</div>
+                <div class="tools-item-pill">Oracle</div>
               </div>
             </div>
             <div class="work-details">
@@ -160,10 +182,9 @@
         </div>
         <div class="work-item">
           <h3 class="work-name">ArrayFire</h3>
-          <!-- https://arrayfire.com/ -->
           <div class="work-description">
             <div class="tools">
-              <h4 class="tools-label">Tools Used</h4>
+              <h4 class="tools-label label">Tools Used</h4>
               <div class="tools-item">
                 <div class="tools-item-pill">C</div>
               </div>
@@ -179,13 +200,15 @@
               <p>They are a high-caliber team and were great to work with. The work itself was certainly satisfying as well. Nothing beats working the feeling of working on something technically complex and seeing it work perfectly with speedups of >1000x at the end of the day!</p>
             </div>
           </div>
+          <div class="button-links">
+            <a href="https://arrayfire.com" class="button-link" target="_blank" rel="noopener">Check them out</a>
+          </div>
         </div>
         <div class="work-item">
           <h3 class="work-name">Georgia Tech Research Institute</h3>
-          <!-- https://www.gtri.gatech.edu/laboratories/electro-optical-systems-laboratory -->
           <div class="work-description">
             <div class="tools">
-              <h4 class="tools-label">Tools Used</h4>
+              <h4 class="tools-label label">Tools Used</h4>
               <div class="tools-item">
                 <div class="tools-item-pill">C</div>
               </div>
@@ -197,14 +220,15 @@
               <p>I worked in the Remote Sensing Group, part of their Electro-Optical Systems Laboratory, doing contracting work primarily for the Department of Defense. Most of the projects I was involved with are classified so I can't discuss individual projects but I worked on designing and building optical systems along with their associated signal processing and simulating and analyzing deployment of infrared countermeasures. I was also involved in data collection and analysis for a variety of projects as well.</p>
             </div>
           </div>
+          <div class="button-links">
+            <a href="https://www.gtri.gatech.edu/laboratories/electro-optical-systems-laboratory" class="button-link" target="_blank" rel="noopener">Check them out</a>
+          </div>
         </div>
         <div class="work-item">
           <h3 class="work-name">Georgia Tech Computer Aided Design Laboratory</h3>
-          <!-- http://www.gtcad.gatech.edu/ -->
-          <!-- http://www.gtcad.gatech.edu/3d-maps/ -->
           <div class="work-description">
             <div class="tools">
-              <h4 class="tools-label">Tools Used</h4>
+              <h4 class="tools-label label">Tools Used</h4>
               <div class="tools-item">
                 <div class="tools-item-pill">C</div>
               </div>
@@ -219,6 +243,10 @@
               <p>During my undergraduate work I was lucky enough to be able to work with GTCAD and Sung Kyu Lim on the 3D-MAPS project, the first taped out 3D many-core processor from an academic institution. I worked with one other undergraduate to set up a custom thermal modeling pipeline using ANSYS GABMIT and FLUENT to evaluate the thermal properties of the unrealized design.</p>
               <p>As major CAD tools at the time could not handle TSVs or the concept 3D stacking the lab had a custom tool chain to handle the design. We developed scripts to translate and combine the labs custom layout files into a format usable with solid & thermal modeling tools and to set up and run the simulations to get thermal characteristics from the designs.</p>
             </div>
+          </div>
+          <div class="button-links">
+            <a href="https://www.gtcad.gatech.edu" class="button-link" target="_blank" rel="noopener">Check them out</a>
+            <a href="http://www.gtcad.gatech.edu/3d-maps" class="button-link" target="_blank" rel="noopener">Check it out</a>
           </div>
         </div>
       </div>
