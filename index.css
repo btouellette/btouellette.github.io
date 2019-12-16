@@ -302,3 +302,74 @@ div.tools-item-pill {
   right: -110px; /* -(ring h / 2) + (planet h / 2 + planet css right)  */
   transform: skew(-10deg); 
 }
+
+.moon-orbit {
+  border-radius: 200px;
+  height: 420px;
+  width: 420px;
+  position: absolute;
+  top: calc(20% - 210px + 100px); /* (planet css top) - (ring h / 2) + (planet h / 2) */
+  right: -180px; /* -(ring h / 2) + (planet h / 2 + planet css right)  */
+   -webkit-animation: moon-orbit 40s linear infinite;
+  animation: moon-orbit 40s linear infinite; 
+  transform: skew(-10deg); 
+}
+
+.moon:before {
+  top: 20%;
+  left: 0px;
+  border-radius: 100px;
+  content: "";
+  position: absolute;
+  box-shadow: inset -4px 6px 0 -2px rgba(0, 0, 0, 0.25);
+  height: 25px;
+  width: 25px;
+  background: #c0caff;
+  z-index: 999;
+   -webkit-animation: moon 40s linear infinite;
+  animation: moon 40s linear infinite; 
+}
+
+@-webkit-keyframes moon-orbit {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes moon-orbit {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes moon {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes moon {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
