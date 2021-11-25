@@ -43,7 +43,7 @@ body {
 
 .header-top-text,
 .header-bottom-text  {
-  background-color: #171c2f;
+  text-shadow: -1px -1px 0 #171c2f, 1px -1px 0 #171c2f, -1px 1px 0 #171c2f, 1px 1px 0 #171c2f;
   display: inline-block;
 }
 
@@ -106,7 +106,7 @@ div.project-details p,
 div.work-details p {
   margin: 1.2em 0;
   padding-bottom: 1em;
-  background: #171c2f;
+  text-shadow: -1px -1px 0 #171c2f, 1px -1px 0 #171c2f, -1px 1px 0 #171c2f, 1px 1px 0 #171c2f;
 }
 
 div.tools {
@@ -163,6 +163,10 @@ div.tools-item-pill {
   width: 100%;
 }
 
+.button-links {
+  display: flex;
+}
+
 .button-link {
   padding: 10px 30px;
   display: inline-block;
@@ -177,12 +181,6 @@ div.tools-item-pill {
   background-color: #171c2f;
 }
 
-.button-link:after {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  transition: all 0.3s;
-}
 
 .button-link {
   border-radius: 20px;
@@ -190,39 +188,50 @@ div.tools-item-pill {
   color: #efefef;
   overflow: hidden;
   text-decoration: none;
+  text-align: center;
 }
 
-.button-link:active {
-  border-color: #9abaec;
-  color: #9abaec;
-}
 
-.button-link:hover {
-  background: #3f4a68;
-}
+@media (hover: hover) {
+  .button-link:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s;
+  }
 
-.button-link:before {
-  position: absolute;
-  height: 100%;
-  font-size: 125%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #efefef;
-  transition: all 0.3s;
-  content: "\1F846";
-  right: 15px;
-  opacity: 0;
-  top: 0;
-}
+  .button-link:active {
+    border-color: #9abaec;
+    color: #9abaec;
+  }
 
-.button-link:active:before {
-  color: #9abaec;
-}
+  .button-link:hover {
+    background: #3f4a68;
+  }
 
-.button-link:hover:before {
-  right: 5px;
-  opacity: 1;
+  .button-link:before {
+    position: absolute;
+    height: 100%;
+    font-size: 125%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #efefef;
+    transition: all 0.3s;
+    content: "\1F846";
+    right: 15px;
+    opacity: 0;
+    top: 0;
+  }
+
+  .button-link:active:before {
+    color: #9abaec;
+  }
+
+  .button-link:hover:before {
+    right: 5px;
+    opacity: 1;
+  }
 }
 
 .background {
